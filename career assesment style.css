@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#EED7FF,#C8E6FF);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+header{
+    width:100%;
+    height:80px;
+
+    background:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.logo{
+    color:#6C63FF;
+    font-size:32px;
+    font-weight:bold;
+}
+
+nav p{
+    color:#666;
+    font-size:18px;
+}
+
+.career{
+    text-align:center;
+    margin-top:60px;
+}
+.career h1{
+    font-size:42px;
+    color:#333;
+}
+.career p{
+    margin-top:15px;
+    font-size:18px;
+    color:#666;
+    width:700px;
+    max-width:90%;
+}
+
+.container{
+    width:1000px;
+    max-width:90%;
+
+    margin-top:50px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.careerbtn{
+    height:90px;
+
+    border:none;
+    border-radius:18px;
+    background:white;
+
+    font-size:18px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:.35s;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+.careerbtn:hover{
+    transform:translateY(-8px);
+
+    background:#6C63FF;
+    color:white;
+    box-shadow:0 20px 35px rgba(108,99,255,.35);
+}
+.careerbtn.active{
+    background:#6C63FF;
+    color:white;
+}
+
+
+.continue-btn{
+    margin:60px 0;
+    width:250px;
+    height:60px;
+
+    border:none;
+    border-radius:40px;
+
+    background:#6C63FF;
+    color:white;
+
+    font-size:20px;
+    font-weight:bold;
+
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 12px 25px rgba(108,99,255,.3);
+}
+.continue-btn:hover{
+    transform:scale(1.05);
+    background:#584DFF;
+}
+
+@media(max-width:768px){
+header{
+padding:20px;
+flex-direction:column;
+height:auto;
+gap:10px;
+}
+
+.career h1{
+font-size:32px;
+}
+.career p{
+font-size:16px;
+}
+.container{
+grid-template-columns:1fr;
+}
+}

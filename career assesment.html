@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerLink | Career Assessment</title>
+
+    <link rel="stylesheet" href="career assesment style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">CAREERLINK</h2>
+        <nav>
+            <p>Career & Academic Path System</p>
+        </nav>
+    </header>
+
+    <section class="career">
+        <h1>Select Your Career Interest</h1>
+        <p>
+        Choose one or more career fields that match your interests.
+        Our AI will use these selections to recommend suitable career paths.
+        </p>
+    </section>
+
+    <div class="container">
+        <button class="careerbtn">💻 Technology & IT</button>
+        <button class="careerbtn">🩺 Healthcare & Medicine</button>
+        <button class="careerbtn">📈 Business & Management</button>
+        <button class="careerbtn">⚙ Engineering</button>
+        <button class="careerbtn">🎨 Arts & Design</button>
+        <button class="careerbtn">🔬 Science & Research</button>
+        <button class="careerbtn">📚 Education & Teaching</button>
+        <button class="careerbtn">⚖ Law & Legal</button>
+        <button class="careerbtn">💰 Finance & Accounting</button>
+        <button class="careerbtn">🎥 Media & Communications</button>
+    </div>
+
+    <button class="continue-btn"
+        onclick="window.location.href='Exam Marks.html'">
+        Continue →
+    </button>
+
+</body>
+
+<script>
+const buttons=document.querySelectorAll(".careerbtn");
+buttons.forEach(btn=>{
+btn.addEventListener("click",()=>{
+btn.classList.toggle("active");
+});
+});
+</script>
+
+</body>
+</html>
